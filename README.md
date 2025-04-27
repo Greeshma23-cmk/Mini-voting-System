@@ -1,42 +1,54 @@
-# Mini Voting System
+# Mini Voting System for College Elections
 
-This project is an embedded  C-based Mini Voting System developed for basic election/voting applications using button inputs and displays.  
-It allows users to cast votes and displays the voting results in real time.
+This project is a simple *C language-based Voting System* designed to conduct *college-level elections*.  
+It handles voter authentication, voting, and election result management.
 
 ## Features
-- Simple user interface using buttons.
-- Vote counting for multiple candidates.
-- Real-time display of voting results.
-- Reset functionality for new voting sessions.
+- Admin Panel for election setup and result management.
+- Voter Panel for casting votes securely.
+- Voter ID validation based on date, location, and ID number.
+- Protection against double voting.
+- Live vote count update and result display.
+- Ability to delete illegal votes.
+- Election data saved in external text files.
 
 ## Tools & Technologies Used
-- Embedded C
-- Microcontroller (example: STM32 / LPC2148 / any MCU)
-- LCD Display / 7-Segment Display
-- Push Button Modules
+- C Programming Language
+- File Handling in C
+- Structures (struct) for organized data management
 
 ## Project Structure
-- main.c - Main application code
-- voting.c - Voting logic (vote casting and counting)
-- display.c - Displaying votes and results
-- button.c - Handling button inputs
-- README.md - Project documentation
+- main.c — Main application code (admin panel, voter panel, result declaration).
+- ElectionInfo.txt — Stores current election details.
+- candidateX.txt — Stores vote count and voters for each candidate (where X = candidate number).
 
-## How to Run
-1. Flash the code into the microcontroller.
-2. Connect push buttons for vote casting and LCD/Display module.
-3. Press buttons to cast votes for candidates.
-4. Display will show live vote count and final results.
+## How to Use
+1. *Admin Panel*:  
+   - Login using Username: Admin and Password: admiN.
+   - Create a new election or continue a previous one.
+   - Manage candidates and voting.
+   - View and declare election results.
+
+2. *Voter Panel*:  
+   - Voters input their voter ID.
+   - System validates the ID.
+   - If valid and not voted yet, voter can cast vote.
+
+## Example Voter ID Format
+- 14 characters long.
+- First 2 digits → Election Date.
+- Next 9 characters → Location Name.
+- Last 3 digits → Unique Voter Number.
+
+Example: 12Mumbai001
 
 ## Future Improvements
-- Add password-protected admin mode to reset votes.
-- Implement a timer for auto-closing the voting session.
-- Introduce wireless modules for remote voting.
-- Display percentage results and winner announcement.
-- 
+- Add encryption for voter ID for higher security.
+- Web or GUI-based front-end for better usability.
+- SMS/Email notification to voters after voting.
+
 ## Author
 Gollapalli Greeshma
 
 ## Project Link
 - [GitHub Repository Link](https://github.com/Greeshma23-cmk/Mini-voting-System)
-
