@@ -1,6 +1,6 @@
 # Mini Voting System
 
-This project is an Embedded C-based Mini Voting System developed for basic election/voting applications using button inputs and displays.  
+This project is an embedded  C-based Mini Voting System developed for basic election/voting applications using button inputs and displays.  
 It allows users to cast votes and displays the voting results in real time.
 
 ## Features
