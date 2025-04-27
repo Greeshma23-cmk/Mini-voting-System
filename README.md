@@ -18,7 +18,7 @@ It handles voter authentication, voting, and election result management.
 - Structures (struct) for organized data management
 
 ## Project Structure
-- main.c — Main application code (admin panel, voter panel, result declaration).
+- main function — Main application code (admin panel, voter panel, result declaration).
 - ElectionInfo.txt — Stores current election details.
 - candidateX.txt — Stores vote count and voters for each candidate (where X = candidate number).
 
