@@ -38,5 +38,5 @@ It allows users to cast votes and displays the voting results in real time.
 Gollapalli Greeshma
 
 ## Project Link
-- [GitHub Repository Link]()
+- [GitHub Repository Link](https://github.com/Greeshma23-cmk/Mini-voting-System)
 
